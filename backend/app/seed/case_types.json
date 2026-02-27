@@ -1,0 +1,124 @@
+{
+    "case_types": [
+        {
+            "code": "C01",
+            "name": "국내 영리법인 + 대표자 본인 + 일반계좌",
+            "description": "대표자 본인 내점, 실제소유자 확인 가능, 고위험 아님"
+        },
+        {
+            "code": "C02",
+            "name": "국내 영리법인 + 임직원 대리",
+            "description": "법인 소속 임직원 대리 내점"
+        },
+        {
+            "code": "C03",
+            "name": "국내 영리법인 + 외부 대리인",
+            "description": "외부 대리인/수임인 내점"
+        },
+        {
+            "code": "C04",
+            "name": "공동대표 + 단독 가능",
+            "description": "공동대표 중 단독 대표권 행사 가능"
+        },
+        {
+            "code": "C05",
+            "name": "공동대표 + 공동행사 필요",
+            "description": "공동대표 전원 공동행사 필요"
+        },
+        {
+            "code": "C06",
+            "name": "비영리법인 + 대표자 본인",
+            "description": "국내 비영리법인, 대표자 본인 내점"
+        },
+        {
+            "code": "C07",
+            "name": "비영리법인 + 대리인",
+            "description": "국내 비영리법인, 대리인 내점"
+        },
+        {
+            "code": "C08",
+            "name": "법인격 없는 단체/임의단체",
+            "description": "대표자 또는 관리책임자 신청"
+        },
+        {
+            "code": "C09",
+            "name": "외국법인",
+            "description": "국내 지점/사무소 포함, 기본 승인필요"
+        },
+        {
+            "code": "C10",
+            "name": "신설법인",
+            "description": "사업 개시 초기, 일반 사업실적 부족"
+        },
+        {
+            "code": "C11",
+            "name": "실제소유자 확인 곤란",
+            "description": "다단계 지배구조 또는 복잡한 지분구조"
+        },
+        {
+            "code": "C12",
+            "name": "고위험 플래그",
+            "description": "해외/고위험 국가/특수심사 필요"
+        },
+        {
+            "code": "C13",
+            "name": "상품 추가",
+            "description": "해외주식/외화, 파생, 채권 등 부가 상품"
+        },
+        {
+            "code": "C14",
+            "name": "비대면 사전접수",
+            "description": "비대면 사전접수 후 대면 확인 예정"
+        }
+    ],
+    "case_tags": [
+        {
+            "code": "NEW_CORP",
+            "name": "신설법인"
+        },
+        {
+            "code": "FOREIGN_RELATED",
+            "name": "외국법인 관련"
+        },
+        {
+            "code": "UBO_COMPLEX",
+            "name": "실제소유자 확인 곤란"
+        },
+        {
+            "code": "HIGH_RISK",
+            "name": "고위험"
+        },
+        {
+            "code": "BUSINESS_STATUS_ABNORMAL",
+            "name": "사업자 상태 이상"
+        },
+        {
+            "code": "DOCUMENT_MISMATCH",
+            "name": "서류 불일치"
+        },
+        {
+            "code": "PROXY_UNCLEAR",
+            "name": "대리권 불명확"
+        },
+        {
+            "code": "PRODUCT_ADDITIONAL",
+            "name": "상품 추가 필요"
+        },
+        {
+            "code": "FOREIGN_SECURITIES_PRODUCT",
+            "name": "해외증권 상품"
+        },
+        {
+            "code": "DERIVATIVES_PRODUCT",
+            "name": "파생상품"
+        },
+        {
+            "code": "CMA_SETTLEMENT_PRODUCT",
+            "name": "CMA 상품"
+        },
+        {
+            "code": "JOINT_REP_ISSUE",
+            "name": "공동대표 이슈"
+        }
+    ]
+}
