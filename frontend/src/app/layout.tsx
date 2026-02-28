@@ -18,13 +18,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body style={{ fontFamily: "'Inter', sans-serif" }}>
         {/* Navigation */}
         <nav style={{
-          background: "rgba(10, 15, 30, 0.95)",
-          borderBottom: "1px solid var(--border)",
-          padding: "12px 24px",
+          background: "linear-gradient(90deg, var(--navy) 0%, var(--navy-dark) 100%)",
+          borderBottom: "1px solid rgba(255,255,255,0.1)",
+          padding: "16px 24px",
           position: "sticky",
           top: 0,
           zIndex: 50,
-          backdropFilter: "blur(12px)",
+          boxShadow: "0 4px 20px rgba(0,0,0,0.2)",
         }}>
           <div style={{
             maxWidth: 1200,
@@ -36,30 +36,35 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <a href="/" style={{
               display: "flex",
               alignItems: "center",
-              gap: 10,
+              gap: 12,
               textDecoration: "none",
-              color: "var(--text-primary)",
+              color: "white",
             }}>
               <div style={{
-                width: 32,
-                height: 32,
-                background: "linear-gradient(135deg, var(--navy), var(--orange))",
+                width: 36,
+                height: 36,
+                background: "var(--orange)",
                 borderRadius: 8,
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
-                fontWeight: 700,
-                fontSize: 14,
+                fontWeight: 800,
+                fontSize: 16,
+                color: "white",
+                boxShadow: "0 2px 4px rgba(245, 130, 32, 0.3)",
               }}>
-                MA
+                M
               </div>
-              <span style={{ fontWeight: 700, fontSize: 15 }}>법인 계좌개설 판정</span>
+              <div style={{ display: "flex", flexDirection: "column" }}>
+                <span style={{ fontWeight: 800, fontSize: 16, letterSpacing: "-0.02em", color: "var(--orange)", lineHeight: 1.2 }}>Mirae Asset</span>
+                <span style={{ fontWeight: 600, fontSize: 12, letterSpacing: "-0.01em", color: "white", opacity: 0.9 }}>미래에셋증권 법인계좌개설</span>
+              </div>
             </a>
             <div style={{ display: "flex", gap: 16 }}>
-              <a href="/determination" className="btn-secondary" style={{ padding: "6px 16px", fontSize: 13, textDecoration: "none" }}>
+              <a href="/determination" className="btn-primary" style={{ padding: "8px 20px", fontSize: 14, textDecoration: "none", boxShadow: "0 4px 12px rgba(4, 59, 114, 0.4)" }}>
                 📋 판정 시작
               </a>
-              <a href="/admin" className="btn-secondary" style={{ padding: "6px 16px", fontSize: 13, textDecoration: "none" }}>
+              <a href="/admin" className="btn-secondary" style={{ padding: "8px 20px", fontSize: 14, textDecoration: "none", background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.1)", color: "white" }}>
                 ⚙️ 관리자
               </a>
             </div>

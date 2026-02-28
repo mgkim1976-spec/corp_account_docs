@@ -10,17 +10,20 @@ export default function Home() {
       {/* Hero */}
       <div className="animate-in">
         <h1 style={{
-          fontSize: 40,
+          fontSize: 48,
           fontWeight: 800,
-          background: "linear-gradient(135deg, #fff 0%, var(--navy) 50%, var(--orange) 100%)",
+          background: "linear-gradient(135deg, #ffffff 0%, var(--orange-light) 100%)",
           WebkitBackgroundClip: "text",
           WebkitTextFillColor: "transparent",
-          marginBottom: 16,
+          marginBottom: 24,
+          letterSpacing: "-0.02em",
+          textShadow: "0 2px 10px rgba(245, 130, 32, 0.1)"
         }}>
-          법인 계좌개설 서류 판정 시스템
+          법인 서류 판정 자동화 시스템
         </h1>
-        <p style={{ color: "var(--text-secondary)", fontSize: 16, maxWidth: 600, margin: "0 auto 48px" }}>
-          입력값 기반 케이스 자동 분류 → 필요 서류 자동 산출 → 예외 케이스 감지 → 접수 가능 여부 즉시 판정
+        <p style={{ color: "var(--text-secondary)", fontSize: 18, maxWidth: 650, margin: "0 auto 56px", lineHeight: 1.6 }}>
+          입력값 기반 <strong>케이스 자동 분류</strong>부터 필요한 <strong>구비서류의 즉각 산출</strong>, 예외 사항 감지까지.<br />
+          법인고객의 계좌개설 소요 시간을 획기적으로 단축합니다.
         </p>
       </div>
 
